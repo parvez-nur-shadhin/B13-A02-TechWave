@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Font Area */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+.inter-font {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Shared Area */
+/* color-gradient */
+.grad-col {
+    background: linear-gradient(to right, #F7E93F, #FB09B4, #9100F8);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+
+
+
+/* Main Body Style Area */
+
+/* ----- Header Section ----- */
+#heading {
+    max-width: 1600px;
+    margin: 0 auto;
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+    background-color: #1A0B2E;
+    align-items: center;
+    padding: 24px 200px;
+}
+.hidden-div {
+    display: none;
+}
+.heading-title {
+    font-size: 2rem;
+    color: white;
+}
+#heading .navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+}
+.list-items {
+    font-size: 1rem;
+    font-weight: medium;
+}
+.list-items a{
+    text-decoration: none;
+    color: white;
+}
+#heading button {
+    background: linear-gradient(to right, #F7E93F, #FB09B4, #9100F8);
+    border: none;
+    border-radius: 10000px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    padding: 12px 16px;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+#heading button img {
+    height: 20px;
+    width: 20px;
+}
+
+
+
+
+
+
+/* Viewport */
+@media screen and (max-width:576px) {
+    /* Header Section */
+    #heading {
+        padding: 16px 20px;
+        justify-content: space-between;
+        width: auto;
+    }
+    .heading-title {
+        font-size: 1.25rem;
+    }
+    .hidden-div {
+        display:block;
+    }
+    .navbar{
+        display: none;
+    }
+    #heading button {
+        display: none;
+    }
+    #heading button img {
+        height: 24px;
+        width: 24px;
+    }
+}
