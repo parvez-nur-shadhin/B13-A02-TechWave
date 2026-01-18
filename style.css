@@ -220,6 +220,68 @@
     color: white;
     margin-top: 16px;
 }
+/* ----- Why Choose TechWave ----- */
+#why-choose-techwave {
+    max-width: 1600px;
+    width: auto;
+    margin: 0 auto;
+    padding: 120px 200px;
+    background-color: #230E3D;
+}
+#why-choose-techwave h1{
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+}
+.cards1 {
+    grid-area: headphone;
+}
+.cards2 {
+    grid-area: device;
+}
+.cards3 {
+    grid-area: global;
+}
+.cards4 {
+    grid-area: exclusive;
+}
+.cards5 {
+    grid-area: resource;
+}
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    gap: 30px;
+    grid-template-areas: 
+    "headphone  device device"
+    "headphone  global global"
+    "exclusive exclusive resource";
+    margin-top: 40px;
+}
+.cards1, .cards2, .cards3, .cards4, .cards5 {
+    background-color: rgba(53, 17, 101, 0.4);
+    border: none;
+    border-radius: 40px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.card-container img{
+    max-width: 50px;
+}
+.card-container h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    margin-top: 16px;
+}
+.card-container p {
+    color: rgba(255, 255, 255, 0.541);
+    margin-top: 16px;
+}
 
 
 
@@ -292,4 +354,27 @@
     .top-container h1 {
         margin-top: 20px;
     }
+
+    /* Why Choose TechWave */
+
+    #why-choose-techwave{
+        padding: 20px;
+    }
+    #why-choose-techwave h1 {
+        font-size: 2rem;
+    }
+    .card-container {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+        grid-template-areas:
+        "headphone"
+        "device"
+        "global"
+        "exclusive"
+        "resource";
+    }
+
+
+
+
 }
