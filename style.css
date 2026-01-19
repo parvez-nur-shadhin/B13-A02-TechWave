@@ -311,7 +311,71 @@
     margin-top: 16px;
 }
 
+/* ----- Featured Episodes Section ----- */
+#featured-episodes {
+    max-width: 1600px;
+    width: auto;
+    margin: 0 auto;
+    padding: 120px 200px;
+    background-color: #1A0B2E;
+}
+#featured-episodes h1 {
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+}
+#featured-episodes .featured-container {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap :30px;
+    margin: 0 auto;
+    justify-items: center;
+    margin-top: 40px;
+}
+.featured-card {
+    max-width: 380px;
+    background-color: #250D44;
+    border:none;
+    border-radius: 20px;
+}
+.featured-card:hover {
+    cursor: pointer;
+    transform: scale(105%);
+    transition: 0.5s ease;
+}
+.iframe-container {
+    width: 100%;
+    aspect-ratio: 16 / 9;
 
+}
+.featured-card iframe {
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.card-content {
+    padding: 20px;
+}
+.featured-card h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+}
+.featured-card p {
+    font-size: 1rem;
+    font-weight: 400;
+    color: hsla(0, 0%, 100%, 0.603);
+    margin-top: 12px;
+}
+.time-info {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    font-size: 1rem;
+    font-weight: 500px;
+}
 
 /* Viewport */
 @media screen and (max-width:576px) {
@@ -341,7 +405,6 @@
 
     /* Banner Section */
     #banner {
-        max-width: 440px;
         margin: 0 auto;
         padding: 20px;
         background-size: cover;
@@ -401,7 +464,16 @@
         "exclusive"
         "resource";
     }
-
+    /* Featured Episodes Section */
+    #featured-episodes {
+        padding: 20px;
+    }
+    #featured-episodes .featured-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    #featured-episodes h1 {
+        font-size: 2rem;
+    }
 
 
 
