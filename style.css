@@ -13,6 +13,11 @@
   font-weight: normal;
   font-style: normal;
 }
+/* Animation */
+@keyframes move {
+    from {transform: scale(100%);}
+    to {transform: scale(110%);}
+}
 
 /* Shared Area */
 /* color-gradient */
@@ -104,6 +109,9 @@
     background-size: cover;
     background-repeat: no-repeat;
 }
+.banner-image {
+     animation: move 1s linear infinite;
+}
 .banner-image img {
     width: 100%;
     max-width: 116px;
@@ -113,7 +121,6 @@
     background-size: contain;
     background-repeat: no-repeat;
     padding: 150px;
-
 }
 #banner .sticker {
     font-size: 1.125rem;
@@ -602,4 +609,15 @@ footer .social-icons .social-content img {
         justify-content: center;
     }
 
+    /* Footer Section */
+    footer {
+        padding: 20px;
+    }
+    footer .social-icons{
+        flex-wrap: wrap;
+    }
+    .copyright {
+        margin-bottom: 20px;
+        margin-top: 40px;
+    }
 }
