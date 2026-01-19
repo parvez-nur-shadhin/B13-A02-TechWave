@@ -23,6 +23,10 @@
     color: transparent;
 }
 
+.btn-animation {
+    transform: scale(150%);
+    transition: 0.8sec ease-in ease-in-out;
+}
 
 
 
@@ -75,6 +79,10 @@
     font-weight: 600;
     cursor: pointer;
 }
+#heading button:hover {
+    transform: scale(150%);
+    transition: 0.5s ease;
+}
 #heading button img {
     height: 20px;
     width: 20px;
@@ -112,11 +120,18 @@
     font-weight: 600;
     color: black;
     background-color: #00FF88;
-    padding: 8px 16px;
+    padding: 10px 20px;
     border-radius: 1000px;
-    margin-bottom: -80px;
+    margin-bottom: -100px;
     z-index: 1;
-    margin-right: -150px;
+    margin-right: -160px;
+    box-shadow: 0 0 70px #00FF88;
+}
+#banner .sticker:hover {
+    transform: translateX(5px) translateY(5px);
+    transform: scale(150%);
+    cursor: pointer;
+    transition: 0.5s ease;
 }
 .banner-content .banner-title {
     font-size: 4rem;
@@ -131,7 +146,7 @@
 }
 .banner-content-buttons {
     display: flex;
-    gap: 8px;
+    gap: 45px;
     justify-content: center;
     align-items: center;
 }
@@ -145,12 +160,16 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 4px;
+    gap: 10px;
     padding: 12px 16px;
     color: white;
     font-size: 1rem;
     font-weight: 600;
     cursor: pointer;
+}
+.banner-content-buttons .btn1:hover{
+    transform: scale(150%);
+    transition: 0.5s ease;
 }
 .banner-content-buttons .btn2 {
     color: #00FF88;
@@ -168,7 +187,10 @@
     border-color: #00FF88;
     border-radius: 10000px;
 }
-
+.banner-content-buttons .btn2:hover{
+    transform: scale(150%);
+    transition: 0.5s ease;
+}
 /* ----- About The Podcast Section ----- */
 #about-the-section {
     max-width: 1600px;
@@ -269,8 +291,14 @@
     flex-direction: column;
     justify-content: center;
 }
+.hvr:hover {
+    cursor: pointer;
+    transform: scale(110%);
+    transition: 1s ease;
+}
 .card-container img{
     max-width: 50px;
+    
 }
 .card-container h3 {
     font-size: 1.5rem;
